@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Используем lang="en" — это хорошая практика, даже если страница пока на русском -->
+<html lang="ru">
 <head>
-    <meta charset="UTF-8"> <!-- Явное указание кодировки — хорошая привычка -->
-    <title>Мой стильный сайт</title> <!-- Заголовок страницы -->
-    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивый макет</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h1>Добро пожаловать!</h1>
-            <p>Это пример структурированного и красивого HTML-документа.</p>
-            <p>Здесь можно использовать списки, абзацы, заголовки разных уровней.</p>
-        </article>
-        <aside>
-            <h2>Подсказки</h2>
-            <p>Этот параграф содержит дополнительный контекст.</p>
-        </aside>
-    </main>
-    <footer>
-        <p>&copy; 2025 Мой сайт. Все права защищены.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Добро пожаловать</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <img src="https://source.unsplash.com/random/photo?v=2" alt="Случайное фото" class="hero-image">
+                <div class="card-content">
+                    <h2>Заголовок</h2>
+                    <p>Текст, который выглядит стильно и привлекает внимание.</p>
+                    <button>Узнать больше</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Ваш сайт. Все права защищены.</p>
+        </footer>
+    </div>
 </body>
 </html>
