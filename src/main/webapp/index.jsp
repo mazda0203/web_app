@@ -1,45 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en"> <!-- Используем lang="en" — это хорошая практика, даже если страница пока на русском -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лёгкий дизайн</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            font-family: Arial, sans-serif;
-        }
-
-        .box {
-            width: 200px;
-            height: 200px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .text {
-            color: #667eea;
-            font-size: 1.5em;
-        }
-    </style>
+    <meta charset="UTF-8"> <!-- Явное указание кодировки — хорошая привычка -->
+    <title>Мой стильный сайт</title> <!-- Заголовок страницы -->
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS -->
 </head>
 <body>
-    <div class="box">
-        <div class="text">Привет, мир!</div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Добро пожаловать!</h1>
+            <p>Это пример структурированного и красивого HTML-документа.</p>
+            <p>Здесь можно использовать списки, абзацы, заголовки разных уровней.</p>
+        </article>
+        <aside>
+            <h2>Подсказки</h2>
+            <p>Этот параграф содержит дополнительный контекст.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 Мой сайт. Все права защищены.</p>
+    </footer>
 </body>
 </html>
